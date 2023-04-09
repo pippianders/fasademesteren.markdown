@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Fasademesteren</h1>
+
+<header>
+<h2>Vi tar vare på fasaden din</h2>
+</header>
+
+<section>
+<nav>
+<ul>
+<li><a href="#">Hjem</a></li>
+<li><a href="#">Tjenester</a></li>
+<li><a href="#">Prosjekter</a></li>
+<li><a href="#">Om oss</a></li>
+<li><a href="#">Kontakt</a></li>
+</ul>
+</nav>
+
+<article>
+<h1>Velkommen til Fasademesteren</h1>
+<p>Fasademesteren er en erfaren og dyktig fagarbeider som spesialiserer seg på å opprettholde og forbedre fasader av alle slag. Enten du trenger rehabilitering av en eldre bygning, eller du ønsker å gi en moderne bygning et nytt og friskt utseende, vil fasademesteren finne den beste løsningen for deg og ditt prosjekt.</p>
+<p>En av de største utfordringene med å vedlikeholde fasader er de harde norske værforholdene som kan påvirke bygningsmaterialene over tid. Fasademesteren tar hensyn til dette og sørger for å bruke materialer og teknikker som er motstandsdyktige mot ekstreme temperaturer, nedbør og andre værforhold som kan skade fasaden.</p>
+<img src="fasade.jpg" style="max-width:100%;height:auto;">
+</article>
+</section>
+
+<footer>
+<p>Fasademesteren AS &copy; 2023. Alle rettigheter reservert.</p>
+</footer>
+
+</body>
+</html>
